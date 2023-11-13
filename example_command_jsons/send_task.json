@@ -1,0 +1,5 @@
+{
+ "command": "send_task",
+ "worker_name": "worker_666",
+ "task_name": "compiled_sleep"
+}

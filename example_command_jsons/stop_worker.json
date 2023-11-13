@@ -1,0 +1,4 @@
+{
+ "command": "stop_worker",
+ "worker_name": "worker_666"
+}

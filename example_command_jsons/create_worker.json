@@ -1,0 +1,14 @@
+{
+"command": "create_worker",
+"worker_name": "worker_666",
+"tasks": [
+  {
+    "task_name": "compiled_sleep",
+    "command_string": "out",
+    "executable_path": "example_task_1"
+  }, {
+    "task_name": "bash_sleep",
+    "command_string": "just_sleep",
+    "executable_path": "example_task_2"
+  }]
+}

@@ -1,0 +1,29 @@
+{
+	"Celery_app_name": "MainCeleryApp",
+	"Celery_broker_url": "amqp://0.0.0.0:5672",
+	"Celery_exchange": "celery_exchange",
+	"Celery_backend_url": "redis://0.0.0.0:6379",
+	"Celery_worker_image": "celery_worker",
+	"Master_broker_url": "localhost",
+	"Master_queue": "master_queue",
+	"Reporting_broker_url": "localhost",
+	"Reporting_exchange": "reporting_exchange",
+	"Reporting_routing_key": "celery_worker_report",
+	"all_known_tasks": [
+		{
+			"task_name": "compiled_example_1",
+			"command_string": "out",
+			"executable_path": "example_task_1"
+		},
+		{
+			"task_name": "bash_example",
+			"command_string": "just_sleep",
+			"executable_path": "example_task_2"
+		},
+		{
+			"task_name": "broken_sleep",
+			"command_string": "out2",
+			"executable_path": "example_task_3"
+		}
+	]
+}
